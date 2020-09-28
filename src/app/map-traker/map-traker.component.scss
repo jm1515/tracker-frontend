@@ -1,0 +1,158 @@
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#legend{
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid #000;
+}
+
+#legend h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#legend img {
+  vertical-align: middle;
+}
+
+#div-button-logout{
+  padding-right: 10px;
+  float: right;
+}
+
+#list-cars{
+  font-family: Arial, sans-serif;
+  margin-top: 200px;
+  margin-left: 10px;
+  background: #fff;
+  width: 30%;
+  height: auto;
+  border: 3px solid #000;
+}
+
+#list-cars .mat-form-field {
+  font-size: 14px;
+  width: 90%;
+  margin-left: 10px;
+}
+
+#list-cars table {
+  width: 100%;
+}
+
+#list-cars h3{
+  text-align: center;
+}
+
+.cars{
+  padding-left: 5px;
+}
+
+.cars #name-car{
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+.cars #speed-car{
+  margin-left: 25px;
+  font-size: 17px;
+}
+
+#street-view{
+  width: 300px;
+  height: 250px;
+  margin-top: 220px;
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 10px;
+  border: 3px solid #000;
+}
+
+#searchMarker{
+  width: 500px;
+  height: 80px;
+  margin-top: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.example-full-width {
+  width: 90%;
+  font-size: 17px;
+}
+
+#searchMarker .search-button{
+  outline: none;
+  color: #2196F3;
+}
+
+.fab-container {
+  position: fixed;
+  bottom: 40px;
+  left: 15px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  > div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 5px;
+
+    button {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+.fab-container button{
+  outline: none;
+}
+
+.fab-toggler {
+  float: right;
+  z-index: 100;
+}
+
+#fab-dismiss {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+/* couleur trait en-dessous de l'input */
+/*
+::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+  background-color: #2196F3 !important;
+  color: #2196F3;
+}
+*/
+
+/* couleur du placeholder dans l'input */
+/*
+::ng-deep .mat-form-field-empty.mat-form-field-label {
+  color: #2196F3;
+}
+
+*/
+
+/* couleur du placeholder au-dessus de l'input */
+/*
+::ng-deep .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  color: #2196F3;
+}
+*/

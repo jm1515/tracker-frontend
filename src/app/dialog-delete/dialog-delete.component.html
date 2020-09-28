@@ -1,0 +1,13 @@
+
+<h1 mat-dialog-title>
+  Suppression du véhicule
+</h1>
+
+<div mat-dialog-content class="dialog-content">
+  Êtes-vous sûr de vouloir supprimer ce véhicule ? ({{plateNumber}})
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Annuler</button>
+  <button mat-button mat-dialog-close (click)="onDeleteClick()">Supprimer</button>
+</div>

@@ -1,0 +1,38 @@
+mat-toolbar{
+  background-color: white;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 84px;
+}
+
+.button-logo{
+  outline: none;
+  cursor: pointer;
+}
+
+.button-logo img{
+  width: 70%;
+}
+
+.button-icon{
+  margin-left: 30px;
+  margin-right: 45px;
+  outline: none;
+  font-size: 35px;
+  color: #2196F3;
+}
+
+.button-icon span{
+  font-size: 17px;
+}
+
+#button-logout{
+  margin-right: 135px;
+}
+
+#btn-right{
+  margin-left: auto;
+  margin-right: 55px;
+}

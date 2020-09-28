@@ -1,0 +1,28 @@
+
+<mat-toolbar>
+
+  <a (click)="map()" class="button-logo">
+    <img src="../assets/img/logo-toolbar.png">
+  </a>
+
+  <button class="button-icon" (click)="addVehicle()" id="btn-right" mat-icon-button>
+    <mat-icon [inline]="true">add_box</mat-icon>
+    <span>Ajouter</span>
+  </button>
+
+  <button class="button-icon" (click)="home()" mat-icon-button>
+    <mat-icon [inline]="true">settings</mat-icon>
+    <span>Traker</span>
+  </button>
+
+  <button class="button-icon" (click)="profile()" mat-icon-button>
+    <mat-icon [inline]="true">account_circle</mat-icon>
+    <span>Profil</span>
+  </button>
+
+  <button class="button-icon" id="button-logout" (click)="logOut()" mat-icon-button>
+    <mat-icon [inline]="true">power_settings_new</mat-icon>
+    <span>Déconnexion</span>
+  </button>
+
+</mat-toolbar>

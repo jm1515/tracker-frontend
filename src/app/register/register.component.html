@@ -1,0 +1,45 @@
+<div class="container login-wrapper">
+
+  <div class="row justify-content-center align-items-center">
+
+  <mat-card class="col-sm-6 box">
+    <mat-card-header>
+      <mat-card-title></mat-card-title>
+      <mat-card-subtitle>Inscrivez-vous rapidement !</mat-card-subtitle>
+    </mat-card-header>
+
+    <form class="login-form">
+      <mat-card-content>
+
+        <mat-form-field class="example-full-width">
+          <input #firstname required matInput placeholder="Nom">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input #lastname required matInput placeholder="Prénom">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input #email required matInput placeholder="Email">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input #phoneNumber required matInput placeholder="N° téléphone">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input #password required type="password" matInput placeholder="Mot de passe">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input #passwordConfirm required type="password" matInput placeholder="Confirmation mot de passe">
+        </mat-form-field>
+      </mat-card-content>
+      <button mat-stroked-button (click)="register(firstname.value, lastname.value, email.value, phoneNumber.value, password.value, passwordConfirm.value)" class="btn-block">Inscription</button>
+    </form>
+    <a [routerLink]="['/login']" class="btn btn-class" id="btn-left-register">Déjà inscrit ?</a>
+  </mat-card>
+
+  </div>
+
+</div>

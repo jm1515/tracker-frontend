@@ -1,0 +1,69 @@
+.container-all{
+  width: 95%;
+  margin: 115px auto 25px;
+}
+.container-info {
+  width: 90%;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.container-info #btn-save {
+  color: white;
+  line-height: 54px;
+  background: linear-gradient(40deg, #45cafc, #303f9f) !important;
+  border-color: white;
+  width: 30%;
+}
+
+.container-info #btn-cancel{
+  font-size: 15px;
+  padding: .5rem 3rem;
+  border: solid 2px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+                    linear-gradient(to right, #45cafc 25%, #303f9f 75%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  width: 30%;
+  margin-right: 10px;
+}
+
+#btn-delete{
+  width: 30%;
+  height: 10%;
+  margin-left: 5px;
+  margin-right: 15px;
+  outline: none;
+}
+
+.vehicle-form img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.user-form img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h1{
+  text-align: center;
+  color: #2196F3;
+  font-weight: bold;
+}
+
+.traker-form img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.example-full-width{
+  width: 750px;
+}

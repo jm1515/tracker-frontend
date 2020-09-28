@@ -1,0 +1,113 @@
+<app-map-toolbar></app-map-toolbar>
+
+<div class="container-all">
+
+  <mat-grid-list cols="4" rowHeight="100px" gutterSize="50px">
+
+    <mat-grid-tile [colspan]="2" [rowspan]="6" class="container-info">
+
+      <form class="vehicle-form">
+
+        <img src="../assets/img/icon-car.png"><br>
+
+        <h1>Informations du véhicule</h1><br>
+
+        <mat-form-field class="example-full-width">
+          <input #carMileage matInput type="number" placeholder="Nombre de kilomètres" value="{{vehicle ? vehicle.carMileage : ''}}">
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="example-full-width">
+          <input #carState matInput placeholder="Etat de la voiture" value="{{vehicle ? vehicle.carState : ''}}">
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="example-full-width">
+          <input #fuelState matInput type="number" placeholder="Pourcentage de carburant restant" value="{{vehicle ? vehicle.fuelState : ''}}">
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="example-full-width">
+          <input #plateNumber required matInput placeholder="Plaque d'immatriculation" value="{{vehicle ? vehicle.plateNumber : ''}}">
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="example-full-width">
+          <input #longitude matInput type="number" placeholder="Longitude" value="{{vehicle ? vehicle.longitude : ''}}">
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="example-full-width">
+          <input #latitude matInput type="number" placeholder="Latitude" value="{{vehicle ? vehicle.latitude : ''}}">
+        </mat-form-field>
+        <br><br>
+
+      </form>
+
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="6" class="container-info">
+
+      <form class="user-form">
+
+        <img src="../assets/img/empty-profile-picture.png"><br>
+
+        <h1>Informations du conducteur</h1><br>
+
+        <mat-form-field class="example-full-width">
+          <input #firstname required matInput placeholder="Nom"  value="{{vehicle ? vehicle.user.firstname : ''}}">
+        </mat-form-field>
+        <br><br><br><br>
+
+        <mat-form-field class="example-full-width">
+          <input #lastname required matInput placeholder="Prénom" value="{{vehicle ? vehicle.user.lastname : ''}}">
+        </mat-form-field>
+        <br><br><br><br>
+
+        <mat-form-field class="example-full-width">
+          <input #email required matInput placeholder="Mail" value="{{vehicle ? vehicle.user.email : ''}}">
+        </mat-form-field>
+        <br><br><br><br>
+
+        <mat-form-field class="example-full-width">
+          <input #phoneNumber required matInput placeholder="Numéro de téléphone" value="{{vehicle ? vehicle.user.phoneNumber : ''}}">
+        </mat-form-field>
+        <br><br><br><br>
+
+      </form>
+
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="4" class="container-info">
+
+      <form class="traker-form">
+
+        <img src="../assets/img/gps-traker.jpg"><br>
+
+        <h1>Informations du tracker</h1>
+
+        <mat-form-field class="example-full-width">
+          <input #deviceId required matInput placeholder="ID du device" value="{{vehicle ? vehicle.device.deviceID : ''}}">
+        </mat-form-field>
+        <br><br>
+
+        <mat-form-field class="example-full-width">
+          <input #deviceName required matInput placeholder="Nom du device" value="{{vehicle ? vehicle.device.deviceName : ''}}">
+        </mat-form-field>
+        <br><br>
+
+      </form>
+
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="4" class="container-info">
+
+      <button mat-raised-button id="btn-cancel" (click)="goBack()">Annuler</button>
+      <button *ngIf="vehicle" mat-raised-button color="warn" id="btn-delete" (click)="openDialog()">Supprimer</button>
+      <button mat-raised-button id="btn-save" (click)="updateOrAddVehcile(carMileage.value, carState.value, fuelState.value, plateNumber.value, longitude.value, latitude.value, deviceId.value, deviceName.value, firstname.value, lastname.value, email.value, phoneNumber.value)" >Enregistrer</button>
+
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+</div>

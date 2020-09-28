@@ -1,0 +1,33 @@
+<app-map-toolbar></app-map-toolbar>
+
+<div class="container-traker">
+
+  <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+
+    <ng-container *ngFor="let vehicle of vehicles">
+
+      <mat-card class="example-card">
+
+        <mat-card-header>
+          <mat-card-title>{{vehicle.plateNumber}}</mat-card-title>
+        </mat-card-header>
+
+        <img src="../assets/img/icon-car.png">
+
+        <mat-card-actions>
+          <button mat-button class="button-icon" (click)="openDialog(vehicle.plateNumber)">
+            <mat-icon [inline]="true">delete_sweep</mat-icon>
+          </button>
+
+          <button mat-button class="button-icon" id="button-right" (click)="showVehicle(vehicle.plateNumber)">
+            <mat-icon [inline]="true">create</mat-icon>
+          </button>
+        </mat-card-actions>
+
+      </mat-card>
+
+    </ng-container>
+
+  </div>
+
+</div>

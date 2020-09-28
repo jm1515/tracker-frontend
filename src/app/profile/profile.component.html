@@ -1,0 +1,47 @@
+
+<app-map-toolbar></app-map-toolbar>
+
+<div class="container login-wrapper">
+
+  <div class="row justify-content-center align-items-center">
+
+    <mat-card class="col-sm-8 box">
+
+      <div class="row profile-picture justify-content-center">
+        <img src="../assets/img/empty-profile-picture.png">
+      </div>
+
+      <div class="row profile-picture-title justify-content-center">
+        <h2>Informations personnelles</h2>
+      </div>
+
+      <form class="login-form">
+        <mat-card-content>
+
+          <mat-form-field class="example-full-width">
+            <input #firstname required matInput placeholder="Nom" value="{{user.firstname}}">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input #lastname required matInput placeholder="Prénom" value="{{user.lastname}}">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input #email required matInput placeholder="Email" value="{{user.email}}">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input #phoneNumber required matInput placeholder="N° téléphone" value="{{user.phoneNumber}}">
+          </mat-form-field>
+
+        </mat-card-content>
+        <button mat-stroked-button (click)="updateUser(firstname.value, lastname.value, email.value, phoneNumber.value)"
+                class="btn-block">Enregistrer</button>
+      </form>
+      <a [routerLink]="['/updatePwd']" class="btn btn-class" id="btn-left-register">Modifier le mot de passe</a>
+    </mat-card>
+
+  </div>
+
+</div>
+

@@ -1,0 +1,33 @@
+.container-traker {
+  width: 95%;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: white;
+  margin: 125px auto 25px;
+}
+
+.example-card {
+  max-width: 300px;
+  margin: 20px;
+  border: 3px solid #2196F3;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.example-card mat-card-header mat-card-title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.example-card img{
+  width: 95%;
+}
+
+.button-icon{
+  margin-left: 30px;
+  margin-right: 45px;
+  outline: none;
+  font-size: 35px;
+}
+
+#button-right{
+  float: right;
+}
